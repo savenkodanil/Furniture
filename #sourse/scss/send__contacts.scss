@@ -1,0 +1,150 @@
+.bg__send__contacts {
+    width: 100%;
+
+    background: #F2F5FF;
+        .heading__text__send__contacts {
+            padding-top: 60px;
+            margin: 0 20px 0 20px;
+            h2 {
+                @extend %defoult-text-h2;
+
+                transform: translate(-15px , 0);
+                opacity: 0;
+                transition: 1s ease;
+                    &._active {
+                        transform: translate(0% , 0);
+                        opacity: 1;
+                    }
+            }
+
+            p {
+                @extend %defoult-text-p;
+
+                margin: 15px auto 50px auto;
+
+                max-width: 500px;
+
+                transform: translate(15px , 0);
+                opacity: 0;
+                transition: 1s ease;
+                    &._active {
+                        transform: translate(0% , 0);
+                        opacity: 1;
+                    }
+            }
+        }
+
+        .input__send__contacts {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+            padding-bottom: 60px;
+                .input__and__submit {
+                    display: flex;
+
+                    transform: translate(0 , 15px);
+                    opacity: 0;
+                    transition: 1s ease;
+                        &._active {
+                            transform: translate(0% , 0);
+                            opacity: 1;
+                        }
+                        
+                    input:nth-child(1) {
+                        padding: 25px 133px 25px 25px;
+                            &[type~="email"] {
+                                font-size: 1.125rem;
+
+                            }
+                            &[type~="tel"] {
+                                font-size: 1.125rem;
+
+                            }
+                    }
+
+                    input:nth-child(2) {
+                        padding: 28px;
+
+                        background: #054C73;
+
+                        font-family: Montserrat;
+                        font-style: normal;
+                        font-weight: bold;
+                        font-size: 16px;
+                        line-height: 20px;
+
+                        color: #FFFFFF;
+
+                        cursor: pointer;
+
+                        transition: 0.3s ease;
+                            &:hover {
+                                background: #065c8a;
+                            }
+                    }
+                }
+
+                @media(max-width:555px) {
+                    .input__and__submit {
+                        input:nth-child(1) {
+                            padding: 25px 3px 25px 25px;
+                        }
+                
+                        input:nth-child(2) {
+                            padding: 28px;
+                
+                            background: #054C73;
+                
+                            font-family: Montserrat;
+                            font-style: normal;
+                            font-weight: bold;
+                            font-size: 16px;
+                            line-height: 20px;
+                
+                            color: #FFFFFF;
+                
+                            cursor: pointer;
+                        }
+                    }
+                }
+
+                @media(max-width:420px) {
+                    .input__and__submit {
+                        input:nth-child(1) {
+                            padding: 25px 0px 25px 20px;
+                        }
+                
+                        input:nth-child(2) {
+                            padding: 5px;
+                
+                            background: #054C73;
+                
+                            font-family: Montserrat;
+                            font-style: normal;
+                            font-weight: bold;
+                            font-size: 16px;
+                            line-height: 20px;
+                
+                            color: #FFFFFF;
+                
+                            cursor: pointer;
+                        }
+                    }
+                }
+
+                @media(max-width:365px) {
+                    .input__and__submit {
+                        input:nth-child(1) {
+                            padding: 25px 0px 25px 0px;
+                        }
+                
+                        input:nth-child(2) {
+                            padding: 0px;
+                        }
+                    }
+                }
+        }
+}
+
+

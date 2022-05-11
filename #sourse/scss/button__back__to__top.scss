@@ -1,0 +1,40 @@
+/***************************
+*****BUTTON-BACK-TO-TOP*****
+***************************/
+.button__back-to-top {
+    position: fixed;
+    right: 10px;
+    bottom: 25px;
+
+    width: 50px;
+    height: 50px;
+
+    border-color: transparent;
+    border-radius: 50%;
+
+    background: #a5bad1;
+
+    opacity: 0.9;
+
+    cursor: pointer;
+
+    transition: .5s ease;
+}
+.arrow-svg {
+    width: 30px;
+    height: 30px;
+
+    fill: #DFE9F4;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-42%, -53%) rotate(270deg);
+}
+
+.button__back-to-top:hover,
+.button__back-to-top:focus {
+    filter: brightness(1.1);
+    outline: none;
+}

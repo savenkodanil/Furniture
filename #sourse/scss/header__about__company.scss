@@ -1,0 +1,28 @@
+.menu__content__about__company {
+    display: flex;
+    align-items: center;
+
+    padding: 40px 0 40px 0;
+    max-width: 1180px;
+
+    justify-content: center;
+
+    padding: 40px 0 0 0;
+        .logo__about__company {
+            @extend %defoult-color;
+            @extend %font-weight-700;
+            line-height: 41px;
+            font-size: 2.125rem;
+        
+            display: flex;
+            justify-content: center;
+
+            transform: translate(0 , -70px);
+            opacity: 0;
+            transition: 0.8s ease; 
+                &._active {
+                    transform: translate(0 , 0px);
+                    opacity: 1;
+                }
+         }
+}   

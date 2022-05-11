@@ -1,0 +1,358 @@
+header {
+    position: fixed;
+
+    width: 100%;
+
+    background: #fff;
+
+    z-index: 100;
+
+    top: 0;
+        &.active {
+            display: none;
+        }
+}
+
+.progress__bar.active  {
+    display: none;
+}
+
+body.active {
+    overflow:hidden;
+}
+
+.contacts {
+    display: none;
+}
+
+.wrapper {
+    @extend %wrapper-1;
+    margin: 0 auto;
+    .menu__content {
+        display: flex;
+        align-items: center;
+
+        padding: 40px 0 40px 0;
+        max-width: 1180px;
+
+        .logo__header {
+            transform: translate(-15px, 0px);
+            opacity: 0;
+            transition: 0.7s ease;
+        }
+
+        .logo {
+           @extend %defoult-color;
+           @extend %font-weight-700;
+           line-height: 41px;
+           font-size: 2.125rem;
+
+           margin-left: 20px;
+        }
+
+        .logo__header._active {
+            transform: translate(0%, 0px);
+            opacity: 1;
+
+            z-index: 100;
+        }
+
+        .menu__content__nav {
+            font-size: 1rem;
+            @extend %font-weight-700;
+            line-height: 17px;
+
+            flex-basis: 60%;
+
+            margin-left: auto;
+
+           .nav__menu {
+            color: #333333;
+
+            position: relative;
+
+            &:last-child {
+                margin-right: 10px;
+            }
+
+            &:after {
+                background-color: #333333;
+                display: block;
+                content: "";
+                height: 2px;
+                width: 0%;
+                left:50%;
+                position:absolute;
+                transition: width .2s ease;
+                transform:translateX(-50%);
+            }
+            &:hover:after,
+            &:focus:after {
+                width: 100%;
+            }
+           }
+            ul {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                flex-basis: 100%;
+                max-width: 1180px;
+                margin: 0;
+                list-style: none;
+
+                transform: translate(15px , 0);
+                opacity: 0;
+                transition: 1s ease;
+                    &._active {
+                        transform: translate(0% , 0);
+                        opacity: 1;
+                    }
+            }
+            
+            @media(max-width:1040px) {
+                .menu__content {
+                    .logo__header {
+                        transform: translate(0% , 0);
+                        opacity: 1;
+                        transition: 1s ease;
+
+                        z-index: 10000;
+                    }
+                }
+
+                ul {
+                    transform: translate(0% , 0);
+                    opacity: 1;
+                    transition: 1s ease;
+                }
+
+                .section__contacts__title h2 {
+                    transform: translate(0% , 0);
+                    opacity: 1;
+                }
+
+                .section__contacts__item {
+                    transform: translate(0% , 0);
+                    opacity: 1;
+                }
+            }
+
+        }
+    }
+
+}
+/************************************
+**********MAX-WIDTH=1010PX***********
+************************************/
+@media(max-width:1040px){
+    ul {
+        flex-direction: column;
+    }
+    .nav__menu {
+        display: none;
+    }
+    .logo {
+        margin: 0 0 0 20px;
+        &.active {
+            z-index: 1000;
+        }
+    }
+
+    .section__contacts__title.active {
+        h2 {
+            color: #000;
+        }
+    }
+/***********************************
+***************BURGER***************
+***********************************/
+        .header__burger--bg {
+            display: block;
+    
+            position: relative;
+    
+            width: 35px;
+            height: 45px;
+            
+            cursor: pointer;
+    
+            margin: 20px 20px 0px auto;
+            
+            z-index: 5;
+
+            transform: translate(15px , 0);
+            opacity: 0;
+            transition: 0.7s ease;
+                &._active {
+                    transform: translate(0% , 0);
+                    opacity: 1;
+                }
+        }
+
+        .header__burger {
+            display:block;
+    
+            margin: 0 35px 0 0;
+    
+            width:23px;
+            height: 20px;
+        
+            &::before ,
+            &::after {
+                content: '';
+                background: #000000;
+        
+                position: absolute;
+        
+                width: 25px;
+                height: 4px;
+                
+                border-radius: 2px;
+        
+                transition: all 0.2s ease;
+            }
+            &::before {
+                top: 13px;
+                left: 5.2px;
+            }
+            &::after{
+                top: 6px;
+                left: 5.2px;
+            }
+            & span {
+                content: '';
+                background: #000000;
+        
+                position: absolute;
+        
+                width: 25px;
+                height: 4px;
+                top: 20px;
+                left: 5.2px;
+        
+                border-radius: 2px;
+        
+                transition: all 0.2s ease;
+            }
+            &.active::before {
+                transform: rotate(45deg);
+                top: 16px;
+                color: #000;
+            }
+            &.active::after{
+                transform: rotate(-45deg);
+                top: 16px;
+            }    
+            &.active span{
+                transform: scale(0);
+            }
+    }
+/***************************************
+***********MENU IN BURGER***************
+***************************************/
+    
+    .header.active .menu__content::before {
+        transform: translateY(0%);
+    }
+    
+    .menu__content.active::before {
+        content: "";
+        background: #707070;
+
+        position: absolute;
+
+        transform: translateY(-115%) translateY(-3px);
+
+        width: 98%;
+        height: 100%;
+
+        top: 0px;
+        left: 0px;
+
+        z-index: 2;
+
+        transition: transform 0.5s ease;
+    }
+
+    .menu__content::before {
+        content: "";
+        background: #707070;
+        position: absolute;
+        -webkit-transform: translateY(-100%) translateY(-3px);
+                transform: translateY(-100%) translateY(-3px);
+        width: 98%;
+        height: 0%;
+        top: 0px;
+        left: 0px;
+        z-index: 2;
+        -webkit-transition: -webkit-transform 0.5s ease;
+        transition: -webkit-transform 0.5s ease;
+        transition: transform 0.5s ease;
+        transition: transform 0.5s ease, -webkit-transform 0.5s ease;
+      }
+
+    .logo__header.active {
+        z-index: 100;
+    }
+
+    .menu__content__nav {
+        position: relative;
+
+        display: flex;
+        justify-content: space-between;
+
+        z-index: 5;
+            & {
+                position: fixed;
+
+                top: 0;
+                left: 0;
+
+                width: 100%;
+                height: 100%;
+
+                background: #707070;
+
+                transform: translateY(-100%);
+
+                transition: transform 0.5s ease;
+
+                z-index: 1;
+        
+            &.active {
+                display: block;
+
+                transform: translateY(0);
+
+                margin: 0 0 110px 0;
+
+                transition: 0.7s ease;
+
+                padding: 245px 0 0 0;
+
+                overflow: auto;
+            }
+        }
+    }
+        .nav__menu.active {
+            display: flex; 
+    
+            margin: 0 0 65px 0;
+    
+            font-size: 2.5rem;
+        }
+        li {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            list-style: none;
+    }
+    
+    a.nav__menu.active {
+        &.active:hover:after,
+        &.active:focus:after {
+            display: none;
+        }
+    }
+}
+  

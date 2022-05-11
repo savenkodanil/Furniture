@@ -1,0 +1,76 @@
+/***********************************
+***********HEADER-ALL-PHOTOS********
+***********************************/
+
+.logo__header__all__photos {
+    transform: translate(0px, -15px);
+    opacity: 0;
+    transition: 0.7s ease;
+}
+
+.logo__all__photos {
+   @extend %defoult-color;
+   @extend %font-weight-700;
+   line-height: 41px;
+   font-size: 2.125rem;
+
+}
+
+.logo__header__all__photos._active {
+    transform: translate(0%, 0px);
+    opacity: 1;
+
+    z-index: 100;
+}
+
+.menu__content {
+    justify-content: center;
+}
+
+@media(max-width:1040px) {
+    .menu__content__nav__all__photos ul {
+        opacity: 1;
+        transform: translate(0 , 0);
+    }
+
+    .section__contacts__title h2 {
+        opacity: 1;
+        transform: translate(0 , 0);
+    }
+    
+    .section__contacts__item {
+        opacity: 1;
+        transform: translate(0 , 0);
+    }
+
+    .menu__content__nav__all__photos {
+        display: none;
+    }
+
+    .contacts.active {
+        display: block;
+
+        z-index: 1;
+
+        margin-bottom: 300px;
+    }
+
+    ul {
+        flex-direction: column;
+    }
+    .nav__menu__all__photos {
+        display: none;
+    }
+    .logo {
+        margin: 0 0 0 20px;
+        &.active {
+            z-index: 1000;
+        }
+    }
+
+    .section__contacts__title.active {
+        h2 {
+            color: #000;
+        }
+    }
+}

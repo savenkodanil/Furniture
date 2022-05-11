@@ -1,0 +1,86 @@
+@import "nullstyle.scss";
+@import "html&body.scss";
+@import "header.scss";
+@import "main__bg__text__button.scss";
+@import "main__photo.scss";
+@import "main__about__our__company.scss";
+@import "browse__the__range.scss";
+@import "how__it__works.scss";
+@import "section__contacts.scss";
+@import "send__contacts.scss";
+@import "footer_insargam.scss";
+@import "button__back__to__top.scss";
+@import "modal__window.scss";
+@import "about__company.scss";
+@import "all__photos.scss";
+@import "header__all__photos.scss";
+@import "header__about__company.scss";
+@import "progress__bar.scss";
+@import "scroll__bar.scss";
+
+%font-weight-600 {
+    font-weight: 600;
+}
+%font-weight-700 {
+    font-weight: 700;
+}
+%wrapper-1 {
+    max-width: 1180px;
+    margin: 0 auto;
+}
+%defoult-color {
+    color: #054C73;
+}
+
+%defoult-color-2 {
+    color: #F2F5FF;
+}
+%defoult-text-h2 {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 2rem;
+    line-height: 39px;
+
+    color: #333333;
+
+    text-align: center;
+}
+
+%defoult-text-h3 {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1.5rem;
+    line-height: 29px;
+
+    color: #333333;
+    
+    text-align: center;
+}
+
+%defoult-text-p {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.25rem;
+    line-height: 24px;
+    text-align: center;
+
+    color: #666666;
+}
+
+%defoult-text-p-2 {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.125rem;
+    line-height: 28px;
+
+    text-align: center;
+    
+    color: #666666;
+}
+
+
+

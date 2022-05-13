@@ -89,22 +89,6 @@ function progressBarAboutCompanyy(e) {
   progressBarAboutCompany.style.width = per + '%';
 }
 
-/********************************************
-**********PROGRESS-BAR-ALL-PHOTOS*********
-*********************************************/
-const progressBarAllPhotos = document.querySelector('.progress__bar__all__photos');
-
-window.addEventListener('scroll', progressBar);
-
-function progressBarAboutCompanyy(e) {
-  let windowScroll = document.body.scrollTop || document.documentElement.scrollTop;
-  let windowHeight = document.body.scrollHeight || document.documentElement.scrollTop;
-  let per = windowScroll / windowHeight * 125;
-
-  progressBarAllPhotos.style.width = per + '%';
-}
-
-
   $(document).ready(function(){
     // Добавить плавную прокрутку до всех ссылок
     $("a").on('click', function(event) {

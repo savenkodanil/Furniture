@@ -274,6 +274,23 @@ body.active {
         transition: transform 0.5s ease;
     }
 
+    .menu__content::before {
+        content: "";
+        background: #707070;
+        position: absolute;
+        -webkit-transform: translateY(-100%) translateY(-3px);
+        transform: translateY(-100%) translateY(-3px);
+        width: 96%;
+        height: 0%;
+        top: 0px;
+        left: 0px;
+        z-index: 2;
+        -webkit-transition: -webkit-transform 0.5s ease;
+        transition: -webkit-transform 0.5s ease;
+        transition: transform 0.5s ease;
+        transition: transform 0.5s ease, -webkit-transform 0.5s ease;
+      }
+
     .logo__header.active {
         z-index: 100;
     }

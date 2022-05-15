@@ -1,7 +1,10 @@
 /***************************
 *****BUTTON-BACK-TO-TOP*****
 ***************************/
-.button__back-to-top {
+#toTop {
+    display: none;
+}
+.button__to__top {
     position: fixed;
     right: 10px;
     bottom: 25px;
@@ -33,8 +36,8 @@
     transform: translate(-42%, -53%) rotate(270deg);
 }
 
-.button__back-to-top:hover,
-.button__back-to-top:focus {
+.button__to__top:hover,
+.button__to__top:focus {
     filter: brightness(1.1);
     outline: none;
 }

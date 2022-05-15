@@ -1,7 +1,7 @@
 /********************************************
 *********************************************/
 function backToTop() {
-    let button = $('.button__back-to-top');
+    let button = $('.button__back__to__top');
   
     $(window).on('scroll', () => {
       if ($(this).scrollTop() >= 50) {

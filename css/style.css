@@ -124,6 +124,9 @@ body.active {
   color: #333333;
   position: relative;
 }
+.wrapper .menu__content .menu__content__nav .nav__menu.active {
+  color: #000;
+}
 .wrapper .menu__content .menu__content__nav .nav__menu:last-child {
   margin-right: 10px;
 }
@@ -385,7 +388,7 @@ body.active {
     display: -ms-flexbox;
     display: flex;
     margin: 0 0 65px 0;
-    font-size: 2.5rem;
+    font-size: 2.4rem;
   }
 
   li {
@@ -659,8 +662,8 @@ body.active {
   -webkit-transform: translate(-15px, 0);
           transform: translate(-15px, 0);
   opacity: 0;
-  -webkit-transition: 1s ease;
-  transition: 1s ease;
+  -webkit-transition: 0.8s ease;
+  transition: 0.8s ease;
 }
 .block__services .services:nth-child(1)._active {
   -webkit-transform: translate(0, 0px);
@@ -668,11 +671,11 @@ body.active {
   opacity: 1;
 }
 .block__services .services:nth-child(2) {
-  -webkit-transform: translate(0%, 30px);
-          transform: translate(0%, 30px);
+  -webkit-transform: translate(-15px, 0px);
+          transform: translate(-15px, 0px);
   opacity: 0;
-  -webkit-transition: 1s ease;
-  transition: 1s ease;
+  -webkit-transition: 0.8s 0.2s ease;
+  transition: 0.8s 0.2s ease;
 }
 .block__services .services:nth-child(2)._active {
   -webkit-transform: translate(0, 0px);
@@ -680,11 +683,11 @@ body.active {
   opacity: 1;
 }
 .block__services .services:nth-child(3) {
-  -webkit-transform: translate(15px, 0);
-          transform: translate(15px, 0);
+  -webkit-transform: translate(-15px, 0);
+          transform: translate(-15px, 0);
   opacity: 0;
-  -webkit-transition: 1s ease;
-  transition: 1s ease;
+  -webkit-transition: 0.8s 0.4s ease;
+  transition: 0.8s 0.4s ease;
 }
 .block__services .services:nth-child(3)._active {
   -webkit-transform: translate(0, 0px);
@@ -750,12 +753,24 @@ body.active {
   .block__services .services:last-child {
     padding-top: 30px;
   }
-  .block__services .services:nth-child(2) {
-    -webkit-transform: translate(15px, 0%);
-            transform: translate(15px, 0%);
+  .block__services .services:nth-child(1) {
+    -webkit-transform: translate(0px, -15px);
+            transform: translate(0px, -15px);
     opacity: 0;
-    -webkit-transition: 1s ease;
-    transition: 1s ease;
+    -webkit-transition: 0.8s ease;
+    transition: 0.8s ease;
+  }
+  .block__services .services:nth-child(1)._active {
+    -webkit-transform: translate(0, 0px);
+            transform: translate(0, 0px);
+    opacity: 1;
+  }
+  .block__services .services:nth-child(2) {
+    -webkit-transform: translate(0px, -15px);
+            transform: translate(0px, -15px);
+    opacity: 0;
+    -webkit-transition: 0.8s 0.2s ease;
+    transition: 0.8s 0.2s ease;
   }
   .block__services .services:nth-child(2)._active {
     -webkit-transform: translate(0, 0px);
@@ -763,11 +778,11 @@ body.active {
     opacity: 1;
   }
   .block__services .services:nth-child(3) {
-    -webkit-transform: translate(0%, 60px);
-            transform: translate(0%, 60px);
+    -webkit-transform: translate(0%, -15px);
+            transform: translate(0%, -15px);
     opacity: 0;
-    -webkit-transition: 1s ease;
-    transition: 1s ease;
+    -webkit-transition: 0.8s 0.4s ease;
+    transition: 0.8s 0.4s ease;
   }
   .block__services .services:nth-child(3)._active {
     -webkit-transform: translate(0, 0px);
@@ -807,16 +822,16 @@ body.active {
   line-height: 39px;
   text-align: center;
   color: #333333;
-  -webkit-transform: translate(-15px, 0);
-          transform: translate(-15px, 0);
+  -webkit-transform: scale(0.7);
+          transform: scale(0.7);
   opacity: 0;
-  -webkit-transition: 0.9s ease;
-  transition: 0.9s ease;
+  -webkit-transition: 0.8s ease;
+  transition: 0.8s ease;
   margin-bottom: 50px;
 }
 .heading__text h2._active {
-  -webkit-transform: translate(0, 0px);
-          transform: translate(0, 0px);
+  -webkit-transform: scale(1);
+          transform: scale(1);
   opacity: 1;
 }
 .heading__text p {
@@ -1386,8 +1401,8 @@ body.active {
   left: 72%;
   border-radius: 50%;
   margin: 0;
-  -webkit-transform: translate(15px, -50%);
-          transform: translate(15px, -50%);
+  -webkit-transform: translate(10px, -50%);
+          transform: translate(10px, -50%);
   opacity: 0;
   -webkit-transition: 0.8s ease 0.3s;
   transition: 0.8s ease 0.3s;
@@ -1458,16 +1473,16 @@ body.active {
   margin: 60px 20px 0 20px;
 }
 .wrapper__browse__the__range .heading__text__browse__the__range h2 {
-  -webkit-transform: translate(15px, 0);
-          transform: translate(15px, 0);
+  -webkit-transform: scale(0.7);
+          transform: scale(0.7);
   opacity: 0;
-  -webkit-transition: 0.9s ease;
-  transition: 0.9s ease;
+  -webkit-transition: 0.8s ease;
+  transition: 0.8s ease;
   margin-bottom: 50px;
 }
 .wrapper__browse__the__range .heading__text__browse__the__range h2._active {
-  -webkit-transform: translate(0, 0px);
-          transform: translate(0, 0px);
+  -webkit-transform: scale(1);
+          transform: scale(1);
   opacity: 1;
 }
 .wrapper__browse__the__range .heading__text__browse__the__range p {
@@ -1774,16 +1789,16 @@ body.active {
   margin: 0px 20px 0 20px;
 }
 .wrapper__how__it__works .heading__text__how__it__works h2 {
-  -webkit-transform: translate(-15px, 0);
-          transform: translate(-15px, 0);
+  -webkit-transform: scale(0.7);
+          transform: scale(0.7);
   opacity: 0;
   -webkit-transition: 0.9s ease;
   transition: 0.9s ease;
   margin-bottom: 50px;
 }
 .wrapper__how__it__works .heading__text__how__it__works h2._active {
-  -webkit-transform: translate(0, 0px);
-          transform: translate(0, 0px);
+  -webkit-transform: scale(1);
+          transform: scale(1);
   opacity: 1;
 }
 .wrapper__how__it__works .heading__text__how__it__works p {
@@ -2121,15 +2136,15 @@ svg {
   color: #333333;
   text-align: center;
   margin: 80px 0 60px 0;
-  -webkit-transform: translate(0, 25px);
-          transform: translate(0, 25px);
+  -webkit-transform: scale(0.7);
+          transform: scale(0.7);
   opacity: 0;
   -webkit-transition: 0.9s ease;
   transition: 0.9s ease;
 }
 .section__contacts__title h2._active {
-  -webkit-transform: translate(0, 0px);
-          transform: translate(0, 0px);
+  -webkit-transform: scale(1);
+          transform: scale(1);
   opacity: 1;
 }
 
@@ -2142,13 +2157,16 @@ svg {
       -ms-flex-direction: column;
           flex-direction: column;
   gap: 20px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 .section__contacts__item:nth-child(1) {
   -webkit-transform: translate(-15px, 0px);
           transform: translate(-15px, 0px);
   opacity: 0;
-  -webkit-transition: 0.9s ease;
-  transition: 0.9s ease;
+  -webkit-transition: 0.8s 0.1s ease;
+  transition: 0.8s 0.1s ease;
 }
 .section__contacts__item:nth-child(1)._active {
   -webkit-transform: translate(0, 0px);
@@ -2159,8 +2177,8 @@ svg {
   -webkit-transform: translate(-15px, 0px);
           transform: translate(-15px, 0px);
   opacity: 0;
-  -webkit-transition: 0.9s ease;
-  transition: 0.9s ease;
+  -webkit-transition: 0.8s 0.3s ease;
+  transition: 0.8s 0.3s ease;
 }
 .section__contacts__item:nth-child(2)._active {
   -webkit-transform: translate(0, 0px);
@@ -2168,11 +2186,11 @@ svg {
   opacity: 1;
 }
 .section__contacts__item:nth-child(3) {
-  -webkit-transform: translate(15px, 0px);
-          transform: translate(15px, 0px);
+  -webkit-transform: translate(-15px, 0px);
+          transform: translate(-15px, 0px);
   opacity: 0;
-  -webkit-transition: 0.9s ease;
-  transition: 0.9s ease;
+  -webkit-transition: 0.8s 0.5s ease;
+  transition: 0.8s 0.5s ease;
 }
 .section__contacts__item:nth-child(3)._active {
   -webkit-transform: translate(0, 0px);
@@ -2180,11 +2198,11 @@ svg {
   opacity: 1;
 }
 .section__contacts__item:nth-child(4) {
-  -webkit-transform: translate(15px, 0px);
-          transform: translate(15px, 0px);
+  -webkit-transform: translate(-15px, 0px);
+          transform: translate(-15px, 0px);
   opacity: 0;
-  -webkit-transition: 0.9s ease;
-  transition: 0.9s ease;
+  -webkit-transition: 0.8s 0.7s ease;
+  transition: 0.8s 0.7s ease;
 }
 .section__contacts__item:nth-child(4)._active {
   -webkit-transform: translate(0, 0px);
@@ -2232,6 +2250,7 @@ svg {
   font-weight: bold;
   font-size: 1.5rem;
   line-height: 29px;
+  width: 200px;
   color: #000000;
 }
 

@@ -129,24 +129,27 @@ svg {
 
     margin: 80px 0 60px 0;
 
-    transform: translate(0 , 25px);
+    transform: scale(0.7);
     opacity: 0;
     transition: 0.9s ease; 
         &._active {
-            transform: translate(0 , 0px);
+            transform: scale(1);
             opacity: 1;
         }
         
 }
+
 .section__contacts__item {
     display: flex;
     flex-direction: column;
 
     gap: 20px;
+
+    align-items: center;
         &:nth-child(1) {
             transform: translate(-15px , 0px);
             opacity: 0;
-            transition: 0.9s ease; 
+            transition: 0.8s .1s ease; 
                 &._active {
                     transform: translate(0 , 0px);
                     opacity: 1;
@@ -155,25 +158,25 @@ svg {
         &:nth-child(2) {
             transform: translate(-15px , 0px);
             opacity: 0;
-            transition: 0.9s ease; 
+            transition: 0.8s .3s ease; 
                 &._active {
                     transform: translate(0 , 0px);
                     opacity: 1;
         }
         }
         &:nth-child(3) {
-            transform: translate(15px , 0px);
+            transform: translate(-15px , 0px);
             opacity: 0;
-            transition: 0.9s ease; 
+            transition: 0.8s .5s ease; 
                 &._active {
                     transform: translate(0 , 0px);
                     opacity: 1;
         }
         }
         &:nth-child(4) {
-            transform: translate(15px , 0px);
+            transform: translate(-15px , 0px);
             opacity: 0;
-            transition: 0.9s ease; 
+            transition: 0.8s .7s ease; 
                 &._active {
                     transform: translate(0 , 0px);
                     opacity: 1;
@@ -222,6 +225,8 @@ svg {
     font-weight: bold;
     font-size: 1.5rem;
     line-height: 29px;
+
+    width: 200px;
 
     color: #000000;
 }
@@ -299,22 +304,3 @@ svg {
 .content__contacts__location--mail {
     color: #F7654A;
 }
-
-// @media(max-width:1040px) {
-//     .section__contacts__content.active {
-//         h2 {
-//             transform: translate(0% , 0);
-//             opacity: 1;
-//             transition: 1s ease;
-//         }
-    
-//         .section__contacts__item.active {
-//             transform: translate(0% , 0);
-//             opacity: 1;
-            
-//             display: block;
-    
-//             z-index: 1;
-//         }
-//     }
-// }

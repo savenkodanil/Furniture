@@ -254,25 +254,25 @@
     .services:nth-child(1) {
         transform: translate(-15px , 0);
         opacity: 0;
-        transition: 1s ease;
+        transition: 0.8s ease;
             &._active {
                 transform: translate(0 , 0px);
                 opacity: 1;
             }
     }
     .services:nth-child(2) {
-        transform: translate(0% , 30px);
+        transform: translate(-15px , 0px);
         opacity: 0;
-        transition: 1s ease;
+        transition: 0.8s .2s ease;
             &._active {
                 transform: translate(0 , 0px);
                 opacity: 1;
             }
     }
     .services:nth-child(3) {
-        transform: translate(15px , 0);
+        transform: translate(-15px , 0);
         opacity: 0;
-        transition: 1s ease;
+        transition: 0.8s .4s ease;
             &._active {
                 transform: translate(0 , 0px);
                 opacity: 1;
@@ -341,10 +341,20 @@
             }
         }
 
-        .services:nth-child(2) {
-            transform: translate(15px , 0%);
+        .services:nth-child(1) {
+            transform: translate(0px , -15px);
             opacity: 0;
-            transition: 1s ease;
+            transition: 0.8s ease;
+                &._active {
+                    transform: translate(0 , 0px);
+                    opacity: 1;
+                }
+        }
+
+        .services:nth-child(2) {
+            transform: translate(0px , -15px);
+            opacity: 0;
+            transition: 0.8s .2s ease;
                 &._active {
                     transform: translate(0 , 0px);
                     opacity: 1;
@@ -352,9 +362,9 @@
         }
 
         .services:nth-child(3) {
-            transform: translate(0% , 60px);
+            transform: translate(0% , -15px);
             opacity: 0;
-            transition: 1s ease;
+            transition: 0.8s .4s ease;
                 &._active {
                     transform: translate(0 , 0px);
                     opacity: 1;

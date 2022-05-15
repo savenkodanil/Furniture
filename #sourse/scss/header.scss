@@ -71,6 +71,10 @@ body.active {
 
             position: relative;
 
+            &.active {
+                color: #000;
+            }
+
             &:last-child {
                 margin-right: 10px;
             }
@@ -339,7 +343,7 @@ body.active {
     
             margin: 0 0 65px 0;
     
-            font-size: 2.5rem;
+            font-size: 2.4rem;
         }
         li {
             display: flex;

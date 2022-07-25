@@ -74,7 +74,7 @@ main.margin-top {
                                         box-shadow: 0 0 5px #DFE9F4, 0 0 10px #DFE9F4, 0 0 15px #DFE9F4, 0 0 5px #076CA3, 0 0 10px #076CA3, 0 0 20px #076CA3, 2px 2px 2px rgb(206 50 138 / 0%);
                                     }
 
-                                    a {
+                                    .btn {
                                         display: flex;
                                         align-items: center;
                     
@@ -89,6 +89,8 @@ main.margin-top {
                                         line-height: 20px;
                                         text-transform: uppercase;
                                         text-align: center;
+
+                                        cursor: pointer;
                     
                                     }
                                 }   

@@ -2599,7 +2599,7 @@ svg {
   transition: 0.9s ease 0.2s;
 }
 .bg__instagram .wrapper__instagram .text__instagram .messenger .number__messenger-2 svg {
-  fill: #20eaf1;
+  fill: rgb(32, 234, 241);
 }
 .bg__instagram .wrapper__instagram .text__instagram .messenger .number__messenger-3 {
   display: -webkit-box;
@@ -3079,8 +3079,8 @@ body.active {
   padding: 30px;
   border-radius: 15px;
   overflow: hidden;
-  -webkit-box-shadow: 2px 2px 20px black;
-          box-shadow: 2px 2px 20px black;
+  -webkit-box-shadow: 2px 2px 20px rgb(0, 0, 0);
+          box-shadow: 2px 2px 20px rgb(0, 0, 0);
   -webkit-animation: popup 0.3s ease-in 1 forwards;
           animation: popup 0.3s ease-in 1 forwards;
   visibility: visible;
@@ -3526,7 +3526,7 @@ main.margin-top {
   -webkit-box-shadow: 0 0 5px #DFE9F4, 0 0 10px #DFE9F4, 0 0 15px #DFE9F4, 0 0 5px #076CA3, 0 0 10px #076CA3, 0 0 20px #076CA3, 2px 2px 2px rgba(206, 50, 138, 0);
           box-shadow: 0 0 5px #DFE9F4, 0 0 10px #DFE9F4, 0 0 15px #DFE9F4, 0 0 5px #076CA3, 0 0 10px #076CA3, 0 0 20px #076CA3, 2px 2px 2px rgba(206, 50, 138, 0);
 }
-.all__photos .block__photos .photos .info__photos .button__payment .button__all__photos .button-hover a {
+.all__photos .block__photos .photos .info__photos .button__payment .button__all__photos .button-hover .btn {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -3542,6 +3542,7 @@ main.margin-top {
   line-height: 20px;
   text-transform: uppercase;
   text-align: center;
+  cursor: pointer;
 }
 .all__photos .block__photos .photos .info__photos .button__payment .button__all__photos._active {
   -webkit-transform: translate(0%, 0);
@@ -4400,9 +4401,9 @@ main.margin-top {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #0192e2;
-  background: -webkit-gradient(linear, left top, left bottom, from(#0192e2), to(#054c73));
-  background: linear-gradient(180deg, #0192e2 0%, #054c73 100%);
+  background: rgb(1, 146, 226);
+  background: -webkit-gradient(linear, left top, left bottom, from(rgb(1, 146, 226)), to(rgb(5, 76, 115)));
+  background: linear-gradient(180deg, rgb(1, 146, 226) 0%, rgb(5, 76, 115) 100%);
   border-radius: 15px;
 }
 

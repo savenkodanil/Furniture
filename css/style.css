@@ -4373,16 +4373,6 @@ main.margin-top {
   z-index: 1000;
 }
 
-.progress__bar__about__company {
-  position: fixed;
-  left: 0;
-  top: 0;
-  width: 0%;
-  height: 4px;
-  background-color: #054C73;
-  z-index: 1000;
-}
-
 .progress__bar__all__photos {
   position: fixed;
   left: 0;
